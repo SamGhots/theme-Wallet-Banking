@@ -1,0 +1,67 @@
+
+.send-money-container{
+  padding: 10px 20px 0px 20px;
+} 
+.send-money-container .section-heading{
+  margin-bottom: 0px;
+}
+
+.Swiper-send-money .card-main{
+  padding: 10px;
+} 
+.bg-white{
+  background-color: #ffff;
+  
+}
+
+.send-slide{
+ 
+}
+.Swiper-send-money{
+  padding: 0px 0px 10px 20px;
+
+}
+.user-card{
+  display: grid;
+}
+.user-card img{
+
+  height: auto; /* ปรับความสูงอัตโนมัติตามสัดส่วนของภาพ */
+  border-radius: 10px;
+  max-width: 100%; /* ทำให้ภาพไม่เกินขนาด container */
+  max-height: 100vh; /* จำกัดความสูงไม่ให้เกินขนาดหน้าจอ */
+}
+.Swiper-send-money .card-main{
+  width: auto;
+}
+
+.user-card strong{
+  font-size: 11px;
+  margin-top: 8px;
+  color: #27173e;
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+  .send-slide{
+    width: calc(21% ); 
+    height:auto;
+  }
+  
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .send-slide{
+    width: calc(11% );
+    height:auto;
+  }
+}
+
+@media (min-width: 991px) {
+  .send-slide{
+    width: calc(13% );
+    height:auto;
+  }
+}

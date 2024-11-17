@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="theme/css/swiper-bundle.min.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="theme/css/style.css">
+  <link rel="stylesheet" href="theme/component/navbar/navbar.css">
+  <link rel="stylesheet" href="theme/component/sidenav/sidenav.css">
+  <link rel="stylesheet" href="theme/component/wallet-card/wallet-card.css">
+  <link rel="stylesheet" href="theme/component/app-bottom-menu/appBottomMenu.css">
+  <link rel="stylesheet" href="theme/component/stats-card/stats.css">
+  <link rel="stylesheet" href="theme/component/transactions/transactions.css">
+  <link rel="stylesheet" href="theme/component/my-cards/my-cards.css">
+  <link rel="stylesheet" href="theme/component/send-money/send-money.css">
+
+  <link rel="stylesheet" href="theme/component/bills/bills.css">
+  <link rel="stylesheet" href="theme/component/goals/goals.css">
+  <link rel="stylesheet" href="theme/component/news/news.css">
+  <link rel="stylesheet" href="theme/component/footer/footer.css">
+  <title>Finapp</title>
+</head>
+
+<body>
+<!-- navbar-->
+<nav class="section1">
+  <!--box1📦 icon-->
+  <div class="menu-nav">
+    <i class="fa-solid fa-bars" onclick="openNav()"></i>
+  </div>
+
+  <!--box2📦 logo-->
+  <div class="logo-nav"><img src="theme/img/logo.png" alt=""></div>
+  <!--box3📦 warn-->
+  <div class="warn-nav">
+
+    <div class="notification">
+      <i class="fa-regular fa-bell"></i>
+      <span class="badge">4</span>
+    </div>
+    <div class="notification">
+      <img src="theme/img/avatar/avatar1.jpg" alt="Profile">
+      <span class="badge">6</span>
+    </div>
+  </div>
+</nav>
+  <!-- loader -->
+ <!-- sidenav -->
+  <div id="mySidenav" class="sidenav">
+    <div class="profileBox">
+      <div class="image-wrapper">
+        <img src="theme/img/avatar/avatar1.jpg" alt="image" class="imaged w36">
+      </div>
+      <div class="in">
+        <strong>Sebastian Doe</strong>
+        <div class="text-muted">4029209</div>
+      </div>
+      <a href="#" class="sidebar-close" onclick="closeNav()">&times;</a>
+    </div>
+    <!-- balance -->
+    <div class="sidebar-balance">
+      <div class="listview-title">Balance</div>
+      <div class="in-Balance">
+        <h1 class="amount">$ 2,562.50</h1>
+      </div>
+      <!-- action group -->
+      <div class="action-group">
+        <div class="item-balance">
+          <a href="">
+            <div class="icon-balance">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+          <strong>Deposit</strong>
+        </div>
+        <div class="item-balance">
+          <a href="">
+            <div class="icon-balance">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </a>
+          <strong>Withdraw</strong>
+        </div>
+        <div class="item-balance">
+          <a href="">
+            <div class="icon-balance">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+  
+          </a>
+          <strong>Send</strong>
+        </div>
+        <div class="item-balance">
+          <a href="">
+            <div class="icon-balance">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+  
+          </a>
+          <strong>My Cards</strong>
+        </div>
+  
+      </div>
+    </div>
+    <!-- menu -->
+    <div class="menu-sidenav">
+      Menu
+    </div>
+    <!-- listview" -->
+    <ul class="listview">
+      <li>
+        <a href="index.html" class="item">
+          <div class="icon-box">
+            <i class="fa-solid fa-chart-pie"></i> <!-- Replace with ion-icon if needed -->
+          </div>
+          <div class="in">
+            Overview
+            <div class="in-right">
+              <span class="badge">10</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+  
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-pages.html" class="item">
+          <div class="icon-box ">
+            <i class="fa-solid fa-file-alt"></i> <!-- Replace with ion-icon if needed -->
+          </div>
+          <div class="in">
+            Pages
+            <div class="in-right">
+             
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+  
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-components.html" class="item">
+          <div class="icon-box ">
+            <i class="fa-solid fa-th-large"></i> <!-- Replace with ion-icon if needed -->
+          </div>
+          <div class="in">
+            Components
+            <div class="in-right">
+             
+             <i class="fa-solid fa-chevron-right"></i>
+           </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-cards.html" class="item">
+          <div class="icon-box ">
+            <i class="fa-solid fa-credit-card"></i> <!-- Replace with ion-icon if needed -->
+          </div>
+          <div class="in">
+            My Cards
+            <div class="in-right">
+             
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+  
+          </div>
+        </a>
+      </li>
+    </ul>
+    <!-- Others -->
+    <div class="menu-sidenav">
+    Others
+    </div>
+     <!-- listview" -->
+     <ul class="listview">
+      <li>
+        <a href="index.html" class="item">
+          <div class="icon-box">
+          <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="in">
+          Settings
+            <div class="in-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+  
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-pages.html" class="item">
+          <div class="icon-box ">
+          <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <div class="in">
+         
+          Support
+                                  
+            <div class="in-right">
+            <i class="fa-solid fa-chevron-right"></i>
+            
+           </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-components.html" class="item">
+          <div class="icon-box ">
+        
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+          <div class="in">
+            Log out
+            <div class="in-right">
+            <i class="fa-solid fa-chevron-right"></i>
+           </div>
+          </div>
+        </a>
+      </li>
+  
+    </ul>
+   <!--  Send Money -->
+   <div class="menu-sidenav">
+   Send Money
+    </div>
+  <!-- listview" -->
+  <ul class="listview">
+      <li>
+        <a href="index.html" class="item">
+          <div class="icon-box">
+        <img src="theme/img/avatar/avatar2.jpg" alt="">
+          </div>
+          <div class="in">
+          Artem Sazonov
+            <div class="in-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+  
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-pages.html" class="item">
+          <div class="icon-box ">
+          <img src="theme/img/avatar/avatar3.jpg" alt="">
+          </div>
+          <div class="in">
+         
+          Sophie Asveld
+                                  
+            <div class="in-right">
+            <i class="fa-solid fa-chevron-right"></i>
+            
+           </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="app-components.html" class="item">
+          <div class="icon-box ">
+        
+          <img src="theme/img/avatar/avatar4.jpg" alt="">
+          </div>
+          <div class="in">
+          Kobus van de Vegte
+            <div class="in-right">
+            <i class="fa-solid fa-chevron-right"></i>
+           </div>
+          </div>
+        </a>
+      </li>
+  
+    </ul>
+  </div>
+  <div class="overlay" onclick="closeNav()"></div>
+  <!--wallet-container-->
+  <section class="wallet-container section1">
+
+    <div class="wallet-card">
+      <!--box1 📦-->
+      <div class="balance" id="balance">
+        <div class="total">
+          <span class="title">Total Balance</span>
+          <h1>$2,562.50</h1>
+        </div>
+        <div>
+          <div class="box-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <!-------------------------->
+      <!-- box2 📦 -->
+      <div class="wallet-footer">
+        <div class="item item-1">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#withdrawActionSheet">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <strong>Withdraw</strong>
+          </a>
+        </div>
+        <div class="item item-2">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#withdrawActionSheet">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <strong>Send</strong>
+          </a>
+        </div>
+        <div class="item item-3">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#withdrawActionSheet">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <strong>Cards</strong>
+          </a>
+        </div>
+        <div class="item item-4">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#withdrawActionSheet">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-up-down"></i>
+            </div>
+            <strong>Exchange</strong>
+          </a>
+        </div>
+        <!-------------------------->
+      </div>
+  </section>
+  <!-- stats -->
+  <section class="stats-container section1 ">
+
+    <div class="stats-card">
+      <div class="item">
+        <div class="title">
+          Income
+        </div>
+        <div class="value">
+        $ 552.95
+        </div>
+      </div>
+      <div class="item">
+      <div class="title">
+      Expenses
+        </div>  
+        <div class="value">
+        $ 86.45
+        </div>
+     </div>
+     <div class="item">
+        <div class="title">
+        Total Bills
+        </div>
+        <div class="value">
+        $ 53.25
+        </div>
+      </div>
+      <div class="item">
+      <div class="title">
+      Savings
+        </div>  
+        <div class="value">
+        $ 120.99
+        </div>
+     </div>
+      
+    </div>
+    
+  
+    
+  </section>
+  <!-- stats -->
+  <!-- transactions. -->
+  <section class="transactions-container section1 ">
+    <div class="section-heading">
+      <h2 class="title">Transactions</h2>
+      <a href="app-transactions.html" class="link">View All</a>
+    </div>
+    <div class="transactions">
+      <!-- item -->
+      <a href="app-transaction-detail.html" class="item">
+        <div class="detail">
+          <img src="theme/img/brand/1.jpg" alt="img">
+          <div>
+            <strong>Amazon</strong>
+            <p>Shopping</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="price text-danger"> - $ 150</div>
+        </div>
+      </a>
+       <!-- item -->
+      <a href="app-transaction-detail.html" class="item">
+        <div class="detail">
+          <img src="theme/img/brand/2.jpg" alt="img" class="image-block imaged w48">
+          <div>
+            <strong>Apple</strong>
+            <p>Appstore Purchase</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="price text-danger">- $ 29</div>
+        </div>
+      </a>
+       <!-- item -->
+      <a href="app-transaction-detail.html" class="item">
+        <div class="detail">
+          <img src="theme/img/avatar/avatar4.jpg" alt="img" class="image-block imaged w48">
+          <div>
+            <strong>Alex Ljung</strong>
+            <p>Transfer</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="price">+ $ 1,000</div>
+        </div>
+      </a>
+       <!-- item -->
+      <a href="app-transaction-detail.html" class="item">
+        <div class="detail">
+          <img src="theme/img/avatar/avatar3.jpg" alt="img" class="image-block imaged w48">
+          <div>
+            <strong>Beatriz Brito</strong>
+            <p>Transfer</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="price text-danger">- $ 186</div>
+        </div>
+      </a>
+       <!-- item -->
+    </div>
+  
+  
+  
+  </section>
+  <!-- transactions. -->
+ 
+  <!-- my-cards -->
+  <section class="my-cards-container  ">
+    <div class="section-heading">
+      <h2 class="title">My Cards</h2>
+      <a href="app-transactions.html" class="link">View All</a>
+    </div>
+  
+  </section>
+  <swiper-container
+    class="mySwiper"
+    space-between="20"
+    slides-per-view="auto"
+  
+    loop="true">
+  
+    <!-- -slide 1-->
+    <swiper-slide>
+      <div class="card-main bg-primary">
+        <div class="content">
+          <div class="balance">
+            <span class="label">BALANCE</span>
+            <h1 class="title">$ 1,256,90</h1>
+          </div>
+          <div class="in">
+            <div class="card-number">
+              <span class="label">Card Number</span>
+              •••• 9905
+            </div>
+            <div class="bottom">
+              <div class="card-expiry">
+                <span class="label">Expiry</span>
+                12 / 25
+              </div>
+              <div class="card-ccv">
+                <span class="label">CCV</span>
+                553
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-button dropdown">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 1-->
+    <!-- -slide 2-->
+    <swiper-slide>
+      <div class="card-main bg-dark">
+        <div class="content">
+          <div class="balance">
+            <span class="label">BALANCE</span>
+            <h1 class="title">$ 1,256,90</h1>
+          </div>
+          <div class="in">
+            <div class="card-number">
+              <span class="label">Card Number</span>
+              •••• 9905
+            </div>
+            <div class="bottom">
+              <div class="card-expiry">
+                <span class="label">Expiry</span>
+                12 / 25
+              </div>
+              <div class="card-ccv">
+                <span class="label">CCV</span>
+                553
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-button dropdown">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 2-->
+    <!-- -slide 3-->
+    <swiper-slide>
+      <div class="card-main bg-secondary">
+        <div class="content">
+          <div class="balance">
+            <span class="label">BALANCE</span>
+            <h1 class="title">$ 1,256,90</h1>
+          </div>
+          <div class="in">
+            <div class="card-number">
+              <span class="label">Card Number</span>
+              •••• 9905
+            </div>
+            <div class="bottom">
+              <div class="card-expiry">
+                <span class="label">Expiry</span>
+                12 / 25
+              </div>
+              <div class="card-ccv">
+                <span class="label">CCV</span>
+                553
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-button dropdown">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 3-->
+     <!-- -slide 4-->
+    <swiper-slide>
+      <div class="card-main bg-primary">
+        <div class="content">
+          <div class="balance">
+            <span class="label">BALANCE</span>
+            <h1 class="title">$ 1,256,90</h1>
+          </div>
+          <div class="in">
+            <div class="card-number">
+              <span class="label">Card Number</span>
+              •••• 9905
+            </div>
+            <div class="bottom">
+              <div class="card-expiry">
+                <span class="label">Expiry</span>
+                12 / 25
+              </div>
+              <div class="card-ccv">
+                <span class="label">CCV</span>
+                553
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-button dropdown">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </swiper-slide>
+       <!-- -slide 4-->
+       <swiper-slide>
+      <div class="card-main bg-green">
+        <div class="content">
+          <div class="balance">
+            <span class="label">BALANCE</span>
+            <h1 class="title">$ 1,256,90</h1>
+          </div>
+          <div class="in">
+            <div class="card-number">
+              <span class="label">Card Number</span>
+              •••• 9905
+            </div>
+            <div class="bottom">
+              <div class="card-expiry">
+                <span class="label">Expiry</span>
+                12 / 25
+              </div>
+              <div class="card-ccv">
+                <span class="label">CCV</span>
+                553
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-button dropdown">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <!-- send-money-->
+  <section class="send-money-container">
+    <div class="section-heading">
+      <h2 class="title">Send Money</h2>
+      <a href="app-transactions.html" class="link">Add New</a>
+    </div>
+  
+  </section>
+  <swiper-container
+    class="Swiper-send-money"
+    space-between="10"
+    slides-per-view="auto"
+  
+    loop="true">
+  
+    <!-- -slide 1-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar2.jpg" alt="img">
+            <strong>Jurrien</strong>
+          </div>
+        </a>
+  
+      </div>
+    </swiper-slide>
+    <!-- -slide 1-->
+    <!-- -slide 2-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar4.jpg" alt="img">
+            <strong>Elwin</strong>
+          </div>
+        </a>
+  
+      </div>
+    </swiper-slide>
+    <!-- -slide 2-->
+    <!-- -slide 3-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar3.jpg" alt="img">
+            <strong>Alma</strong>
+          </div>
+        </a>
+  
+      </div>
+    </swiper-slide>
+    <!-- -slide 3-->
+    <!-- -slide 4-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar4.jpg" alt="img" class="imaged w-100">
+            <strong>Justine</strong>
+          </div>
+        </a>
+  
+      </div>
+    </swiper-slide>
+    <!-- -slide 4-->
+    <!-- -slide 5-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar5.jpg" alt="img" class="imaged w-100">
+            <strong>Justine</strong>
+          </div>
+        </a>
+      </div>
+    </swiper-slide>
+  
+    <!-- -slide 5-->
+    <!-- -slide 6-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar6.jpg" alt="img" class="imaged w-100">
+            <strong>Maria</strong>
+          </div>
+        </a>
+      </div>
+    </swiper-slide>
+    <!-- -slide 6-->
+    <!-- -slide 7-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar7.jpg" alt="img" class="imaged w-100">
+            <strong>Pamela</strong>
+          </div>
+        </a>
+      </div>
+    </swiper-slide>
+    <!-- -slide 7-->
+    <!-- -slide 8-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar8.jpg" alt="img" class="imaged w-100">
+            <strong>Neville</strong>
+          </div>
+        </a>
+      </div>
+    </swiper-slide>
+    <!-- -slide 8-->
+    <!-- -slide 9-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar9.jpg" alt="img" class="imaged w-100">
+            <strong>Alex</strong>
+          </div>
+        </a>
+      </div>
+    </swiper-slide>
+    <!-- -slide 9-->
+    <!-- -slide 10-->
+    <swiper-slide class="send-slide">
+      <div class="card-main bg-white">
+        <a href="#">
+          <div class="user-card">
+            <img src="theme/img/avatar/avatar10.jpg" alt="img" class="imaged w-100">
+            <strong>Stina</strong>
+          </div>
+        </a>
+      </div>
+    </swiper-slide>
+    <!-- -slide 10-->
+  </swiper-container>
+  <!-- bills -->
+  <section class="bills-container">
+    <div class="section-heading">
+      <h2 class="title">Monthly Bills</h2>
+      <a href="app-transactions.html" class="link">Add New</a>
+    </div>
+  
+  </section>
+  
+  <swiper-container
+    class="Swiper-bills"
+    space-between="20"
+    slides-per-view="auto"
+  
+    loop="true">
+  
+    <!-- -slide 1-->
+    <swiper-slide class="bills-slide">
+      <div class="card-main bg-white">
+        <div class="bill-box">
+          <div class="img-wrapper">
+            <img src="theme/img/brand/1.jpg" alt="img" class="image-block imaged w48">
+          </div>
+          <div class="price">$ 14</div>
+          <p>Prime Monthly Subscription</p>
+          <div class="btn-primary"> <a href="#">PAY NOW</a></div>
+  
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 1-->
+    <!-- -slide 2-->
+    <swiper-slide class="bills-slide">
+      <div class="card-main bg-white">
+        <div class="bill-box">
+          <div class="img-wrapper">
+            <img src="theme/img/brand/2.jpg" alt="img" class="image-block imaged w48">
+          </div>
+          <div class="price">$ 9</div>
+          <p>Music Monthly Subscription</p>
+          <div class="btn-primary"> <a href="#">PAY NOW</a></div>
+  
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 2-->
+    <!-- -slide 3-->
+    <swiper-slide class="bills-slide">
+      <div class="card-main bg-white">
+        <div class="bill-box">
+          <div class="img-wrapper">
+            <div class="iconbox bg-danger">
+            <i class="fa-solid fa-briefcase-medical"></i>
+            </div>
+          </div>
+          <div class="price">$ 299</div>
+          <p>Monthly Health Insurance</p>
+          <div class="btn-primary"> <a href="#">PAY NOW</a></div>
+  
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 3-->
+    <!-- -slide 4-->
+    <swiper-slide class="bills-slide">
+      <div class="card-main bg-white">
+        <div class="bill-box">
+          <div class="img-wrapper">
+            <div class="iconbox bg-blue">
+            <i class="fa-regular fa-credit-card"></i>
+            </div>
+          </div>
+          <div class="price">$ 962</div>
+          <p>Credit Card Statement</p>
+          <div class="btn-primary"> <a href="#">PAY NOW</a></div>
+  
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- -slide 4-->
+    <!-- -slide 5-->
+    <swiper-slide class="bills-slide">
+      <div class="card-main bg-white">
+        <div class="bill-box">
+          <div class="img-wrapper">
+            <div class="iconbox bg-grey">
+           <img src="theme/img/brand/3.ico" alt="">
+            </div>
+          </div>
+          <div class="price">$ 100</div>
+          <p>Credit Card Statement</p>
+          <div class="btn-primary"> <a href="#">PAY NOW</a></div>
+  
+        </div>
+      </div>
+    </swiper-slide>
+       <!-- -slide 5-->
+    <!-- -slide 6-->
+    <swiper-slide class="bills-slide">
+      <div class="card-main bg-white">
+        <div class="bill-box">
+          <div class="img-wrapper">
+            <div class="iconbox bg-green">
+           <img src="theme/img/brand/4.png" alt="">
+            </div>
+          </div>
+          <div class="price">$ 10</div>
+          <p>Credit Card Statement</p>
+          <div class="btn-primary"> <a href="#">PAY NOW</a></div>
+  
+        </div>
+      </div>
+    </swiper-slide>
+      <!-- -slide 6-->
+  </swiper-container>
+<!-- bills -->
+<!-- Goals -->
+<section class="goals-container">
+  <div class="section-heading">
+    <h2 class="title">Saving Goals</h2>
+    <a href="app-transactions.html" class="link">Add New</a>
+  </div>
+  <div class="goals">
+    <!-- item -->
+    <div class="item">
+      <div class="in">
+        <div>
+          <h4>Gaming Console</h4>
+          <p>Gaming</p>
+        </div>
+        <div class="price">$ 499</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+      </div>
+    </div>
+    <!-- * item -->
+    <!-- item -->
+    <div class="item">
+      <div class="in">
+        <div>
+          <h4>New House</h4>
+          <p>Living</p>
+        </div>
+        <div class="price">$ 100,000</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+      </div>
+    </div>
+    <!-- * item -->
+    <!-- item -->
+    <div class="item">
+      <div class="in">
+        <div>
+          <h4>Sport Car</h4>
+          <p>Lifestyle</p>
+        </div>
+        <div class="price">$ 42,500</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+      </div>
+    </div>
+    <!-- * item -->
+  </div>
+</section>
+ <!-- Goals -->
+
+
+ <!-- News -->
+ <section class="news-container">
+  <div class="section-heading">
+    <h2 class="title">Lastest News</h2>
+    <a href="app-transactions.html" class="link">Add New</a>
+  </div>
+
+</section>
+<swiper-container
+  class="Swiper-news"
+  space-between="10"
+  slides-per-view="auto"
+
+  loop="true">
+
+  <!-- -slide 1-->
+  <swiper-slide class="send-slide">
+    <div class="card-main bg-white">
+      <a href="#">
+        <div class="user-card">
+          <img src="theme/img/news/1.jpg" alt="img">
+          <div class="text">
+            <h4 class="title">What will be the value of bitcoin in the next...</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </swiper-slide>
+  <!-- -slide 1-->
+  <!-- -slide 2-->
+  <swiper-slide class="send-slide">
+    <div class="card-main bg-white">
+      <a href="#">
+        <div class="user-card">
+          <img src="theme/img/news/2.jpg" alt="img">
+          <div class="text">
+            <h4 class="title">Rules you need to know in business</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </swiper-slide>
+  <!-- -slide 2-->
+  <!-- -slide 3-->
+  <swiper-slide class="send-slide">
+    <div class="card-main bg-white">
+      <a href="#">
+        <div class="user-card">
+          <img src="theme/img/news/3.jpg" alt="img">
+          <div class="text">
+            <h4 class="title">10 easy ways to save your money</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </swiper-slide>
+  <!-- -slide 3-->
+  <!-- -slide 4-->
+  <swiper-slide class="send-slide">
+    <div class="card-main bg-white">
+      <a href="#">
+        <div class="user-card">
+          <img src="theme/img/news/4.jpg" alt="img">
+          <div class="text">
+            <h4 class="title">Follow the financial agenda with...</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </swiper-slide>
+  <!-- -slide 4-->
+
+
+  <!-- -slide 3-->
+  <swiper-slide class="send-slide">
+    <div class="card-main bg-white">
+      <a href="#">
+        <div class="user-card">
+          <img src="theme/img/news/3.jpg" alt="img">
+          <div class="text">
+            <h4 class="title">10 easy ways to save your money</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </swiper-slide>
+  <!-- -slide 3-->
+ <!-- -slide 4-->
+ <swiper-slide class="send-slide">
+    <div class="card-main bg-white">
+      <a href="#">
+        <div class="user-card">
+          <img src="theme/img/news/4.jpg" alt="img">
+          <div class="text">
+            <h4 class="title">Follow the financial agenda with...</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </swiper-slide>
+  <!-- -slide 4-->
+
+</swiper-container>
+ <!-- News -->
+   <!-- footer -->
+   <section class="footer-container ">
+    <div class="appFooter">
+                <div class="footer-title">
+                    Copyright © Finapp 2021. All Rights Reserved.
+                </div>
+              <p>Bootstrap 5 based mobile template.</p>  
+            </div>
+         
+    </section>
+    
+ <!-- footer -->
+ <!-- App Bottom Menu -->
+ <div class="appBottomMenu">
+  <a href="index.html" class="item active">
+      <div class="col">
+          <ion-icon name="pie-chart-outline" role="img" class="md hydrated" aria-label="pie chart outline"><i class="fa-solid fa-chart-pie"></i></ion-icon>
+          <strong>Overview</strong>
+      </div>
+  </a>
+  <a href="app-pages.html" class="item">
+      <div class="col">
+          <ion-icon name="document-text-outline" role="img" class="md hydrated" aria-label="document text outline"><i class="fa-regular fa-file"></i></ion-icon>
+          <strong>Pages</strong>
+      </div>
+  </a>
+  <a href="app-components.html" class="item">
+      <div class="col">
+          <ion-icon name="apps-outline" role="img" class="md hydrated" aria-label="apps outline"><i class="fa-solid fa-bars"></i></ion-icon>
+          <strong>Components</strong>
+      </div>
+  </a>
+  <a href="app-cards.html" class="item">
+      <div class="col">
+          <ion-icon name="card-outline" role="img" class="md hydrated" aria-label="card outline"><i class="fa-regular fa-credit-card"></i></ion-icon>
+          <strong>My Cards</strong>
+      </div>
+  </a>
+  <a href="app-settings.html" class="item">
+      <div class="col">
+          <ion-icon name="settings-outline" role="img" class="md hydrated" aria-label="settings outline"><i class="fa-solid fa-gear"></i></ion-icon>
+          <strong>Settings</strong>
+      </div>
+  </a>
+</div>
+    <!-- App Bottom Menu -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <script src="theme/js/main.js"></script>
+  <script src="theme/js/balance.js"> </script>
+  <script src="theme/js/mySidenav.js"></script>
+  </script>
+</body>
+
+</html>

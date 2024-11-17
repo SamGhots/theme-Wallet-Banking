@@ -1,0 +1,69 @@
+.goals-container{
+  padding: 10px 20px 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.goals .item {
+  padding: 20px 24px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.goals .item .in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.goals .item h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.goals .item p {
+  margin: 0;
+  font-size: 11px;
+  color: #958d9e;
+  font-weight: 400;
+}
+.goals .item .price {
+  font-weight: 700;
+  color: #27173E;
+}
+
+
+
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+ 
+  height: 14px;
+  border-radius: 10px;
+}
+.progress-bar {
+  background: #6236FF;
+  height: 14px;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+

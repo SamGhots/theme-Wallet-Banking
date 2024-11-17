@@ -1,0 +1,146 @@
+.bills-container {
+  padding: 10px 20px 0px 20px;
+}
+
+.bills-container .section-heading {
+  margin-bottom: 0px;
+}
+
+.Swiper-bills {
+  padding: 0px 0px 0px 20px;
+
+}
+
+
+.Swiper-bills .card-main {
+  width: auto;
+}
+
+
+.Swiper-bills .card-main {
+  padding: 15px;
+}
+
+.bill-box .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #27173E;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+  margin-bottom: 12px;
+}
+
+.bill-box p {
+  font-size: 11px;
+  line-height: 1.4em;
+  height: 36px;
+  margin: 0 0 10px 0;
+
+  color: #958d9e;
+}
+
+.bill-box .img-wrapper {
+  display: flex;
+  text-align: center;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.img-wrapper img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+
+}
+
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background: #6236FF !important;
+  border-color: #6236FF !important;
+}
+
+.btn-primary a {
+  color: #FFFFFF !important;
+  font-size: 12px;
+  padding: 4px 6px 4px 6px;
+  border: 2px;
+  display: block;
+
+
+}
+
+.bills-slide {
+  width: calc(43%);
+
+}
+
+
+
+
+
+.iconbox {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* ปรับมุมให้โค้งมน (ถ้าต้องการ) */
+}
+
+.bg-danger {
+  background: #FF396F !important;
+
+}
+
+.bg-blue {
+  background: #6236FF;
+}
+.bg-grey{
+  background: #d2cee2;
+}
+.bg-grenn{
+  background-color: #1dcc70;
+}
+.iconbox i {
+  font-size: 24px;
+  /* ขนาดไอคอน */
+
+}
+.bills-slide {
+  width: calc(30%);
+
+}
+
+@media (min-width: 992px) {
+  .bills-slide {
+    width: calc(22% ); /* หน้าจอใหญ่: แสดง 3 สไลด์ */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .bills-slide {
+    width: calc(30% ); 
+ 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .bills-slide {
+    width: calc(43% ); 
+  }
+}
+
+
+
+.bills-slide .card-main{
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}

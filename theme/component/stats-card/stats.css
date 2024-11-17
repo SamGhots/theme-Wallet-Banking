@@ -1,0 +1,44 @@
+/* Container for wallet card 🚢 */
+.stats-container {
+  display: grid;
+  
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* stats card 💳 */
+.stats-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* กำหนดให้มี 2 คอลัมน์ */
+  gap: 15px;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+.stats-card .item{
+  width: 100%;
+  padding: 20px 24px 20px 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card .item .title{
+  font-size: 13px;
+  color: #958d9e;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.stats-card .item .value{
+  font-size: 24px;
+  color: #27173e;
+  font-weight: 700;
+}
+
+.stats-card .item:nth-child(1) .value {
+  color: #1DCC70;
+}
+
+.stats-card .item:nth-child(2) .value {
+  color: #ff396f; 
+}
+

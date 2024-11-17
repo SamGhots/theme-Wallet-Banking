@@ -1,0 +1,180 @@
+/* Container for wallet card 🚢 */
+.wallet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* เพื่อให้ pseudo-element ถูกจัดตำแหน่งสัมพันธ์กับ container นี้ */
+}
+/*สร้างพื้นหลังสี*/
+.wallet-container::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  display: block;
+  height: 110px;
+  background: #6236FF;
+  z-index: -1; /* ให้แน่ใจว่า pseudo-element อยู่ด้านหลังของเนื้อหาภายใน container */
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* wallet card 💳 */
+.wallet-card {
+  width: 100%;
+/* ขนาดที่เหมาะสม    width: 300px; */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*box1 📦*/
+.wallet-card .balance {
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* ให้แน่ใจว่า pseudo-element ถูกจัดตำแหน่งอย่างถูกต้อง */
+}
+.wallet-card .balance::after {
+  content: "";
+  position: absolute;
+  left: 20px; /* เริ่มจากด้านซ้ายของ .balance */
+ 
+  bottom: 0; /* ติดอยู่ที่ด้านล่างของ .balance */
+  width: calc(100% - 40px); /* ความยาวเท่ากับความกว้างของ .balance ลบ padding ซ้ายและขวา */
+  height: 1px; /* ความหนาของเส้นขีด */
+  background-color: #d3d3d3; /* สีของเส้นขีด */
+  
+}
+.wallet-card .balance .title{
+  color: #27173e;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.wallet-card .balance h1{
+  color: #27173e;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1em;
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.wallet-card .balance i{
+  color: blue;
+}
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* ขนาดกรอบ */
+  height: 50px;
+  background-color: #f5f5f5; /* สีพื้นหลังของกรอบ */
+  border-radius: 20%; /* ทำให้กรอบเป็นวงกลม */
+  color: #6236FF; /* สีของไอคอน */
+  font-size: 20px; /* ขนาดของไอคอน */
+}
+.balance .total{
+  text-align: start;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*box2 📦*/
+
+/* Container for wallet footer */
+.wallet-footer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(72px, 1fr)); /* แบ่งเป็น 4 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+  padding: 20px;
+  background-color: #fff; /* สีพื้นหลัง */
+}
+
+/* Individual item in wallet footer */
+.wallet-footer .item {
+  text-align: center; /* จัดตำแหน่งข้อความตรงกลาง */
+  color: #000; /* สีข้อความ */
+}
+
+.wallet-footer .item a {
+  text-decoration: none; /* ลบเส้นใต้ */
+  color: inherit; /* ให้ใช้สีตามที่กำหนดใน .item */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-footer .item a:hover {
+  color: #6236FF; /* เปลี่ยนสีเมื่อเมาส์ชี้ */
+}
+
+.wallet-footer .icon-wrapper  {
+  width: 48px;
+  height: 48px;
+  border-radius: 20%; /* ให้เป็นวงกลม */
+  background-color: #f1f1f1; /* สีพื้นหลังไอคอน */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px; /* ระยะห่างด้านล่างไอคอน */
+}
+.item-1 .icon-wrapper {
+  background-color: #ff396f; /* สีพื้นหลังไอคอนสำหรับ item-1 */
+}
+
+.item-2 .icon-wrapper {
+  background-color: #6236ff; /* สีพื้นหลังไอคอนสำหรับ item-2 */
+}
+
+.item-3 .icon-wrapper {
+  background-color: #1dcc70; /* สีพื้นหลังไอคอนสำหรับ item-3 */
+}
+
+.item-4 .icon-wrapper {
+  background-color: #ffb400; /* สีพื้นหลังไอคอนสำหรับ item-4 */
+} 
+.wallet-footer .icon-wrapper i {
+  font-size: 20px;
+  color: #fff; /* สีไอคอน */
+}
+.item strong{
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wallet-footer {
+  
+    gap: 0px; /* ระยะห่างระหว่างคอลัมน์ */
+    
+  }
+.item strong{
+  font-size: 11px;
+  font-weight: 500;
+}
+  .wallet-footer .item {
+    margin-bottom: 15px; /* ระยะห่างระหว่างไอเท็ม */
+  }
+}
+@media (max-width: 359px) {
+  .wallet-footer {
+    grid-template-columns: repeat(4, minmax(60px, 1fr)); 
+    gap: 0px; /* ระยะห่างระหว่างคอลัมน์ */
+    
+  }
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+

@@ -1,0 +1,106 @@
+/* nav */
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #6236FF;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+}
+
+/*box1📦 icon*/
+.menu-nav i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*box2📦 logo*/
+.logo-nav{
+  text-align: center;
+}
+.logo-nav img {
+  width: 100px;
+  /* ขนาดที่เหมาะสม */
+}
+
+/*box3📦 warn*/
+.warn-nav {
+  display: flex;
+  gap: 19px;
+  justify-content: flex-end;
+
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  position: relative;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -1px;
+  right: -9px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 8px;
+}
+.notification i{
+  font-size: 20px;
+}
+.notification img {
+  width: 100%;
+  /* Set icon and image width */
+  height: 100%;
+  /* Set icon and image height */
+  border-radius: 20%;
+  /* Makes the image circular */
+  object-fit: cover;
+  /* Ensures the image covers the area */
+  display: inline-block;
+  /* Ensures the elements are inline */
+  line-height: 40px;
+  /* Center icon vertically */
+  text-align: center;
+  /* Center icon horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .profile-img-wrapper::after {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-img-wrapper {
+    width: 25px;
+    /* ลดขนาดโปรไฟล์สำหรับหน้าจอเล็ก */
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bell-nav i {
+    font-size: 18px;
+    /* ลดขนาดไอคอน bell สำหรับหน้าจอเล็ก */
+  }
+
+  .profile-img-wrapper {
+    width: 25px;
+    /* ลดขนาดโปรไฟล์เพิ่มเติมสำหรับหน้าจอเล็กมาก */
+    height: 24px;
+  }
+}
+
+
